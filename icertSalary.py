@@ -1,3 +1,5 @@
+# This program gets sequence id from the DB, fetches html page using that sequence id
+# Once gets page, parse it inserts data into DB
 import datetime
 from re import sub
 from decimal import Decimal

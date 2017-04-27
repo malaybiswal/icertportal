@@ -1,0 +1,106 @@
+create table icertdata(created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, id int(10), employer varchar(40),empadd1 varchar(40),empadd2 varchar(30),empcity varchar(40), empstate varchar(30), empcountry varchar(50),empzipcode varchar(6), employerphone varchar(15), empnumemployees int(6), empyr int(4), emplastname varchar(20), empfirstname varchar(20), empphone varchar(15), empemail varchar(40), attorneylastname varchar(20), attorneyfirstname varchar(20), attorneyphone varchar(20), attorneyadd1 varchar(40), attorneyadd2 varchar(30), attorneycity varchar(20),attorneystate varchar(20),attorneycountry varchar(50),attorneyzip varchar(6),attorneyemail varchar(50),
+PWnum varchar(20) NOT NULL PRIMARY KEY,occupation varchar(100),skilllevel varchar(100), prevailingwage float(10,2), pwsource varchar(30), determinationdate DATE, expirationdate DATE,OfferedWageFrom float(10,2),offeredwageto float(10,2),workadd1 varchar(100), workadd2 varchar(100),workcity varchar(100),workstate varchar(100),workzip varchar(10),jobtitle varchar(100), educationmin varchar(100),major varchar(100),trainingrequired varchar(10),alteducation varchar(100), numyrexperience INT(3), jobduties TEXT, specificskill TEXT, 
+SWAstartdate DATE,SWAenddate DATE, newspaper varchar(100),advdatefirst DATE,advdatesecond DATE, empwebsitepostdatefrom DATE, empwebsitepostdateto DATE, jobsearchwebsitefrom DATE,jobsearchwebsiteto DATE, localnewspaperdatefrom DATE, localnewspaperdateto DATE, aliencity varchar(100), alienstate varchar(20), aliencountry varchar(50), alienzip varchar(6), aliencitizenshipcountry varchar(50), aliencountryofbirth varchar(50), alienclassofadmission varchar(30), alieneducation varchar(50), alienmajor varchar(50), alieneducompletedyr int(4),aliencollege varchar(100), alienuniversityadd1 varchar(40), alienuniversityadd2 varchar(30), alienuniversitycity varchar(30), alienuniversitystate varchar(30),alienuniversitycountry varchar(50), alienuniversityzip varchar(6) );
+
+
+-----1. Employer's name-----IBM CORPORATION -----2. Address 1-----3039 CORNWALLIS ROAD -----Address 2-----BLDG. 002 /DEPT. 0O4A -----3. City-----RTP -----State/Province-----NC -----Country-----UNITED STATES OF AMERICA -----Postal Code-----27709 -----4. Phone Number-----919-254-7737 -----Extension----- -----5. Number of employees-----370000 -----6. Year commenced business-----1911 -----7. FEIN (Federal Employer Identification Number)----------8. NAICS code-----54151 -----
+
+
+sql="""INSERT INTO icertdata(employer,empadd1,empadd2,empcity,empstate,empcountry,empzipcode,employerphone,empnumemployees,empyr,emplastname,empfirstname,empphone,empemail,attorneylastname,attorneyfirstname,attorneyphone,attorneyadd1,attorneyadd2,attorneycity,attorneystate,attorneycountry,attorneyzip,attorneyemail,PWnum,occupation,skilllevel,prevailingwage,determinationdate,expirationdate,OfferedWageFrom,offeredwageto,workadd1,workadd2,workcity,workstate,workzip,jobtitle,major,numyrexperience,jobduties,specificskill,SWAstartdate,SWAenddate,newspaper,advdatefirst,advdatesecond,empwebsitepostdatefrom,empwebsitepostdateto,jobsearchwebsitefrom,jobsearchwebsiteto,localnewspaperdatefrom,localnewspaperdateto,aliencity,alienstate,aliencountry,alienzip,aliencitizenshipcountry,aliencountryofbirth,alienclassofadmission,alienmajor,alieneducationvarchar,alieneducompletedyr,aliencollege,alienuniversityadd1,alienuniversityadd2,alienuniversitycity,alienuniversitystate,alienuniversitycountry,alienuniversityzip) VALUES(%s, %s, %s, %s, %s)"""
+
+
+P1001319352367
+
+mysql> select employer,occupation,skilllevel,OfferedWageFrom,offeredwageto,aliencountryofbirth,id from icertdata order by OfferedWageFrom;
+
+select max(id) from icertdata where PWnum like '%1%' and id<900000;
+alter table icertdata modify column employer varchar(100);
+mysql> select count(PWnum) from icertdata;
+
+
+mysql> delete from icertdata where prevailingwage <1;
+
+select max(id) from iceetdata where id<810990;
+alter table icertdata create primary key(PWnum);
+
++-------------------------+--------------+------+-----+-------------------+-------+
+| Field                   | Type         | Null | Key | Default           | Extra |
++-------------------------+--------------+------+-----+-------------------+-------+
+| created_at              | timestamp    | NO   |     | CURRENT_TIMESTAMP |       |
+| id                      | int(10)      | YES  |     | NULL              |       |
+| employer                | varchar(40)  | YES  |     | NULL              |       |
+| empadd1                 | varchar(40)  | YES  |     | NULL              |       |
+| empadd2                 | varchar(30)  | YES  |     | NULL              |       |
+| empcity                 | varchar(40)  | YES  |     | NULL              |       |
+| empstate                | varchar(30)  | YES  |     | NULL              |       |
+| empcountry              | varchar(50)  | YES  |     | NULL              |       |
+| empzipcode              | varchar(6)   | YES  |     | NULL              |       |
+| employerphone           | varchar(15)  | YES  |     | NULL              |       |
+| empnumemployees         | int(6)       | YES  |     | NULL              |       |
+| empyr                   | int(4)       | YES  |     | NULL              |       |
+| emplastname             | varchar(20)  | YES  |     | NULL              |       |
+| empfirstname            | varchar(20)  | YES  |     | NULL              |       |
+| empphone                | varchar(15)  | YES  |     | NULL              |       |
+| empemail                | varchar(40)  | YES  |     | NULL              |       |
+| attorneylastname        | varchar(20)  | YES  |     | NULL              |       |
+| attorneyfirstname       | varchar(20)  | YES  |     | NULL              |       |
+| attorneyphone           | varchar(20)  | YES  |     | NULL              |       |
+| attorneyadd1            | varchar(40)  | YES  |     | NULL              |       |
+| attorneyadd2            | varchar(30)  | YES  |     | NULL              |       |
+| attorneycity            | varchar(20)  | YES  |     | NULL              |       |
+| attorneystate           | varchar(20)  | YES  |     | NULL              |       |
+| attorneycountry         | varchar(50)  | YES  |     | NULL              |       |
+| attorneyzip             | varchar(6)   | YES  |     | NULL              |       |
+| attorneyemail           | varchar(50)  | YES  |     | NULL              |       |
+| PWnum                   | varchar(20)  | NO   | PRI | NULL              |       |
+| occupation              | varchar(50)  | YES  |     | NULL              |       |
+| skilllevel              | varchar(100) | YES  |     | NULL              |       |
+| prevailingwage          | float(10,2)  | YES  |     | NULL              |       |
+| pwsource                | varchar(30)  | YES  |     | NULL              |       |
+| determinationdate       | date         | YES  |     | NULL              |       |
+| expirationdate          | date         | YES  |     | NULL              |       |
+| OfferedWageFrom         | float(10,2)  | YES  |     | NULL              |       |
+| offeredwageto           | float(10,2)  | YES  |     | NULL              |       |
+| workadd1                | varchar(100) | YES  |     | NULL              |       |
+| workadd2                | varchar(100) | YES  |     | NULL              |       |
+| workcity                | varchar(100) | YES  |     | NULL              |       |
+| workstate               | varchar(100) | YES  |     | NULL              |       |
+| workzip                 | varchar(10)  | YES  |     | NULL              |       |
+| jobtitle                | varchar(100) | YES  |     | NULL              |       |
+| educationmin            | varchar(100) | YES  |     | NULL              |       |
+| major                   | varchar(100) | YES  |     | NULL              |       |
+| trainingrequired        | varchar(10)  | YES  |     | NULL              |       |
+| alteducation            | varchar(100) | YES  |     | NULL              |       |
+| numyrexperience         | int(3)       | YES  |     | NULL              |       |
+| jobduties               | text         | YES  |     | NULL              |       |
+| specificskill           | text         | YES  |     | NULL              |       |
+| SWAstartdate            | date         | YES  |     | NULL              |       |
+| SWAenddate              | date         | YES  |     | NULL              |       |
+| newspaper               | varchar(100) | YES  |     | NULL              |       |
+| advdatefirst            | date         | YES  |     | NULL              |       |
+| advdatesecond           | date         | YES  |     | NULL              |       |
+| empwebsitepostdatefrom  | date         | YES  |     | NULL              |       |
+| empwebsitepostdateto    | date         | YES  |     | NULL              |       |
+| jobsearchwebsitefrom    | date         | YES  |     | NULL              |       |
+| jobsearchwebsiteto      | date         | YES  |     | NULL              |       |
+| localnewspaperdatefrom  | date         | YES  |     | NULL              |       |
+| localnewspaperdateto    | date         | YES  |     | NULL              |       |
+| aliencity               | varchar(100) | YES  |     | NULL              |       |
+| alienstate              | varchar(20)  | YES  |     | NULL              |       |
+| aliencountry            | varchar(50)  | YES  |     | NULL              |       |
+| alienzip                | varchar(6)   | YES  |     | NULL              |       |
+| aliencitizenshipcountry | varchar(50)  | YES  |     | NULL              |       |
+| aliencountryofbirth     | varchar(50)  | YES  |     | NULL              |       |
+| alienclassofadmission   | varchar(30)  | YES  |     | NULL              |       |
+| alieneducation          | varchar(50)  | YES  |     | NULL              |       |
+| alienmajor              | varchar(50)  | YES  |     | NULL              |       |
+| alieneducompletedyr     | int(4)       | YES  |     | NULL              |       |
+| aliencollege            | varchar(100) | YES  |     | NULL              |       |
+| alienuniversityadd1     | varchar(40)  | YES  |     | NULL              |       |
+| alienuniversityadd2     | varchar(30)  | YES  |     | NULL              |       |
+| alienuniversitycity     | varchar(30)  | YES  |     | NULL              |       |
+| alienuniversitystate    | varchar(30)  | YES  |     | NULL              |       |
+| alienuniversitycountry  | varchar(50)  | YES  |     | NULL              |       |
+| alienuniversityzip      | varchar(6)   | YES  |     | NULL              |       |
++-------------------------+--------------+------+-----+-------------------+-------+
+76 rows in set (0.00 sec)

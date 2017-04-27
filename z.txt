@@ -1,0 +1,79 @@
+1 >>>> 
+4. Education: minimum level required
+
+
+    
+None
+High School
+Associate's
+Bachelor's
+Master's
+Doctorate
+Other
+
+ <<<<<<<
+2 >>>> 
+4-A. If Other is indicated in question 4, specify the education required:
+ 
+ <<<<<<<
+3 >>>> 
+8-A. If Yes, specify the alternate level of education required:
+
+
+     
+None
+High School
+Associate's
+Bachelor's
+Master's
+Doctorate
+Other
+
+ <<<<<<<
+4 >>>> 
+8-B. If Other is indicated in question 8-A, Indicate the alternate level of education required:
+ 
+ <<<<<<<
+5 >>>> 
+10-B. Identify the job title of the acceptable alternate occupation:
+Research Consultant or related 
+ <<<<<<<
+6 >>>> 
+11. Job Duties - If submitting by mail, add attachment if necessary. Job duties description must begin in this space.
+Conduct parametric and non-parametric statistical analysis, including advanced statistical analysis such as regression and relative weights analysis, on survey and assessment data. Conduct linkage analysis, connecting survey results to client business metrics. Conduct qualitative analysis and produce comment reports for clients. Create executive presentations of survey results, which involve analysis and interpretation of survey data while partnering with executive and senior consultants. Write technical reports based on analysis of assessment validation studies. Conduct literature reviews to support internal and external publication writing for executive and senior consultants. Write scaled and open ended employee survey items. Utilize social research methods, statistics and analytic skills, Statistical Package for the Social Sciences (SPSS), and Microsoft Office, particularly Excel, Access, PowerPoint, and Word. 
+ <<<<<<<
+7 >>>> 
+14. Specific skills or other requirements - If submitting by mail, add attachment if necessary. Skills description must begin in this space.
+                
+                    
+                    	
+					
+					Employer will accept any suitable combination of education, training, or experience. One (1) year of experience must include utilizing social research methods, statistics and analytic skills, SPSS, and Microsoft Office, particularly Excel, Access, PowerPoint, and Word. 20% telecommuting permitted. 
+                
+ <<<<<<<
+8 >>>> 
+4. Name and date of national professional journal in which advertisement was placed:
+ 
+ <<<<<<<
+9 >>>> 
+5. Specify additional recruitment information in this space. Add an attachment if necessary.
+ 
+ <<<<<<<
+10 >>>> 
+11. Education: highest level achieved relevant to the requested occupation:
+
+
+    
+None
+High School
+Associate's
+Bachelor's
+Master's
+Doctorate
+Other
+
+ <<<<<<<
+11 >>>> 
+14. Institution where relevant education specified in question 11 was received
+ST. CLOUD STATE UNIVERSITY 
+ <<<<<<<

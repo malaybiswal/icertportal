@@ -1,0 +1,980 @@
+1 >>>> 
+Are you seeking to utilize the filing date from a previously submitted Application for Alien Employment Certification ( ETA 750)? 
+
+
+Yes
+No
+
+ <<<<<<<
+2 >>>> 
+1-A. If Yes, enter the previous filing date
+ 
+ <<<<<<<
+3 >>>> 
+1-B. Indicate the previous SWA or local office case number OR if not available, specify state where case was originally filed:
+ 
+ <<<<<<<
+4 >>>> 
+Is this application in support of a Schedule A or Sheepherder occupation?
+
+
+Yes
+No
+
+If Yes, do NOT send this application to the Department of Labor. All applications in support of Schedule A or Sheepherder Occupations must be sent directly to the appropriate Department of Homeland Security Office. 
+ <<<<<<<
+5 >>>> 
+1. Employer's name
+IBM CORPORATION 
+ <<<<<<<
+6 >>>> 
+2. Address 1
+3039 CORNWALLIS ROAD 
+ <<<<<<<
+7 >>>> 
+Address 2
+BLDG. 002 /DEPT. 0O4A 
+ <<<<<<<
+8 >>>> 
+3. City
+RTP 
+ <<<<<<<
+9 >>>> 
+State/Province
+NC 
+ <<<<<<<
+10 >>>> 
+Country
+UNITED STATES OF AMERICA 
+ <<<<<<<
+11 >>>> 
+Postal Code
+27709 
+ <<<<<<<
+12 >>>> 
+4. Phone Number
+919-254-7737 
+ <<<<<<<
+13 >>>> 
+Extension
+ 
+ <<<<<<<
+14 >>>> 
+5. Number of employees
+370000 
+ <<<<<<<
+15 >>>> 
+6. Year commenced business
+1911 
+ <<<<<<<
+16 >>>> 
+7. FEIN (Federal Employer Identification Number)
+
+ <<<<<<<
+17 >>>> 
+8. NAICS code
+54151 
+ <<<<<<<
+18 >>>> 
+
+                	9. Is the employer a closely held corporation, partnership, or sole propri etorship in which the alien has an ownership interest, 
+                	or is there a familial relationship between the owners, stockholders, partners, corporate officers, incorporators, and the alien? 
+                
+
+
+Yes
+No
+
+ <<<<<<<
+19 >>>> 
+1. Contact's Last Name
+Foster 
+ <<<<<<<
+20 >>>> 
+First Name
+Brenda 
+ <<<<<<<
+21 >>>> 
+Middle Initial
+ 
+ <<<<<<<
+22 >>>> 
+2. Address 1
+3039 Cornwallis Road 
+ <<<<<<<
+23 >>>> 
+Address 2
+Bldg. 002 /Dept. 0O4A 
+ <<<<<<<
+24 >>>> 
+3. City
+RTP 
+ <<<<<<<
+25 >>>> 
+State/Province
+NC 
+ <<<<<<<
+26 >>>> 
+Country
+UNITED STATES OF AMERICA 
+ <<<<<<<
+27 >>>> 
+Postal Code
+27709 
+ <<<<<<<
+28 >>>> 
+4. Phone Number
+919-486-4434 
+ <<<<<<<
+29 >>>> 
+5. E-mail Address
+brendaf@us.ibm.com 
+ <<<<<<<
+30 >>>> 
+1. Agent or attorney's Last Name
+Peloquin 
+ <<<<<<<
+31 >>>> 
+First Name
+Tina 
+ <<<<<<<
+32 >>>> 
+Middle Initial
+R 
+ <<<<<<<
+33 >>>> 
+2. Firm Name
+ 
+ <<<<<<<
+34 >>>> 
+3. Firm EIN
+
+ <<<<<<<
+35 >>>> 
+4. Phone Number
+2122302860 
+ <<<<<<<
+36 >>>> 
+Extension
+ 
+ <<<<<<<
+37 >>>> 
+5. Address 1
+Fragomen, Del Rey, Bernsen & Loewy LLP 
+ <<<<<<<
+38 >>>> 
+Address 2
+7 Hanover Square 
+ <<<<<<<
+39 >>>> 
+6. City
+New York 
+ <<<<<<<
+40 >>>> 
+State/Province
+NY 
+ <<<<<<<
+41 >>>> 
+Country
+UNITED STATES OF AMERICA 
+ <<<<<<<
+42 >>>> 
+Postal Code
+10004 
+ <<<<<<<
+43 >>>> 
+7. E-mail Address
+tpeloquin@fragomen.com 
+ <<<<<<<
+44 >>>> 
+1. Prevailing wage tracking number    (if applicable)
+P10016035865546 
+ <<<<<<<
+45 >>>> 
+2. SOC/O*NET (OES) code
+15-2041 
+ <<<<<<<
+46 >>>> 
+3. Occupation Title
+Statisticians 
+ <<<<<<<
+47 >>>> 
+4. Skill Level
+Level I 
+ <<<<<<<
+48 >>>> 
+5. Prevailing Wage
+$    53,893.00 
+ <<<<<<<
+49 >>>> 
+    Per
+
+
+Hour
+Weekly
+Bi-weekly
+Month
+Year
+
+ <<<<<<<
+50 >>>> 
+6. Prevailing Wage Source
+
+
+OES
+CBA
+Employer Conducted
+
+
+DBA
+SCA
+Other
+
+ <<<<<<<
+51 >>>> 
+6-A. If Other is indicated in question 6,     specify:
+ 
+ <<<<<<<
+52 >>>> 
+7. Determination Date
+04/18/2016 
+ <<<<<<<
+53 >>>> 
+8. Expiration Date
+07/17/2016 
+ <<<<<<<
+54 >>>> 
+1. Offered Wage
+
+From $     53,893.00    
+                    
+	                    To $     77,974.80 
+                
+ <<<<<<<
+55 >>>> 
+  Per
+
+
+Hour
+Weekly
+Bi-weekly
+Month
+Year
+
+ <<<<<<<
+56 >>>> 
+1. Primary Worksite (where work is    to be performed) Address 1
+294 Route 100 
+ <<<<<<<
+57 >>>> 
+Address 2
+and various unanticipated client sites throughout the US 
+ <<<<<<<
+58 >>>> 
+2. City
+Somers 
+ <<<<<<<
+59 >>>> 
+State
+NY 
+ <<<<<<<
+60 >>>> 
+Postal Code
+10589 
+ <<<<<<<
+61 >>>> 
+3. Job Title
+Research Consultant 
+ <<<<<<<
+62 >>>> 
+4. Education: minimum level required
+
+
+    
+None
+High School
+Associate's
+Bachelor's
+Master's
+Doctorate
+Other
+
+ <<<<<<<
+63 >>>> 
+4-A. If Other is indicated in question 4, specify the education required:
+ 
+ <<<<<<<
+64 >>>> 
+4-B. Major field of study
+Industrial-Organizational Psychology or related 
+ <<<<<<<
+65 >>>> 
+5. Is training required in the job opportunity?
+
+
+Yes
+No
+
+ <<<<<<<
+66 >>>> 
+5-A. If Yes, number of months of training required:
+ 
+ <<<<<<<
+67 >>>> 
+5-B. Indicate the field of training
+ 
+ <<<<<<<
+68 >>>> 
+6. Is experience in the job offered required for the job?
+
+
+Yes
+No
+
+ <<<<<<<
+69 >>>> 
+6-A. If Yes, number of months experience required:
+ 
+ <<<<<<<
+70 >>>> 
+7. Is there an alternate field of study that is acceptable?
+
+
+Yes
+No
+
+ <<<<<<<
+71 >>>> 
+7-A. If Yes, specify the major field of study:
+ 
+ <<<<<<<
+72 >>>> 
+8. Is there an alternate combination of education and experience that is acceptable?
+
+
+Yes
+No
+
+ <<<<<<<
+73 >>>> 
+8-A. If Yes, specify the alternate level of education required:
+
+
+     
+None
+High School
+Associate's
+Bachelor's
+Master's
+Doctorate
+Other
+
+ <<<<<<<
+74 >>>> 
+8-B. If Other is indicated in question 8-A, Indicate the alternate level of education required:
+ 
+ <<<<<<<
+75 >>>> 
+8-C. If applicable, indicate the number of years experience acceptable in question 8:
+5 
+ <<<<<<<
+76 >>>> 
+9. Is a foreign educational equivalent acceptable?
+
+
+Yes
+No
+
+ <<<<<<<
+77 >>>> 
+10. Is experience in an alternate occupation acceptable?
+
+
+Yes
+No
+
+ <<<<<<<
+78 >>>> 
+10-A. If Yes, number of months experience in alternate occupation required:
+12 
+ <<<<<<<
+79 >>>> 
+10-B. Identify the job title of the acceptable alternate occupation:
+Research Consultant or related 
+ <<<<<<<
+80 >>>> 
+11. Job Duties - If submitting by mail, add attachment if necessary. Job duties description must begin in this space.
+Conduct parametric and non-parametric statistical analysis, including advanced statistical analysis such as regression and relative weights analysis, on survey and assessment data. Conduct linkage analysis, connecting survey results to client business metrics. Conduct qualitative analysis and produce comment reports for clients. Create executive presentations of survey results, which involve analysis and interpretation of survey data while partnering with executive and senior consultants. Write technical reports based on analysis of assessment validation studies. Conduct literature reviews to support internal and external publication writing for executive and senior consultants. Write scaled and open ended employee survey items. Utilize social research methods, statistics and analytic skills, Statistical Package for the Social Sciences (SPSS), and Microsoft Office, particularly Excel, Access, PowerPoint, and Word. 
+ <<<<<<<
+81 >>>> 
+12. Are the job opportunity's requirements normal for the occupation?
+
+
+Yes
+No
+
+If the answer to this question is No, the employer must be prepared to provide documentation demonstrating that the job requirements are supported by business necessity.
+ <<<<<<<
+82 >>>> 
+13. Is knowledge of a foreign language required to perform the job duties?
+
+
+Yes
+No
+
+If the answer to this question is Yes, the employer must be prepared to provide documentation demonstrating that the language requirements are supported by business necessity.
+ <<<<<<<
+83 >>>> 
+14. Specific skills or other requirements - If submitting by mail, add attachment if necessary. Skills description must begin in this space.
+                
+                    
+                    	
+					
+					Employer will accept any suitable combination of education, training, or experience. One (1) year of experience must include utilizing social research methods, statistics and analytic skills, SPSS, and Microsoft Office, particularly Excel, Access, PowerPoint, and Word. 20% telecommuting permitted. 
+                
+ <<<<<<<
+84 >>>> 
+15. Does this application involve a job opportunity that includes a combination of occupations?
+
+
+Yes
+No
+
+ <<<<<<<
+85 >>>> 
+16. Is the position identified in this application being offered to the alien identified in Section J?
+
+
+Yes
+No
+
+ <<<<<<<
+86 >>>> 
+17. Does the job require the alien to live on the employer's premises?
+
+
+Yes
+No
+
+ <<<<<<<
+87 >>>> 
+18. Is the application for a live-in household domestic service worker?
+
+
+Yes
+No
+
+ <<<<<<<
+88 >>>> 
+18-A. If Yes, have the employer and the alien executed the required employment contract and has the employer provided a copy of the contract to the alien?
+
+
+Yes
+No
+N/A
+
+ <<<<<<<
+89 >>>> 
+1. Is this application for a professional occupation, other than a college or university teacher? Professional occupation are those for which a bachelor's degree (or equivalent) is nomally required.
+
+
+Yes
+No
+
+ <<<<<<<
+90 >>>> 
+2. Is this application for a college or university teacher?
+
+
+Yes
+No
+
+If Yes, complete question 2-A and 2-B below.
+ <<<<<<<
+91 >>>> 
+2-A. Did you select the candidate using a competitive recruitment and selection process?
+
+
+Yes
+No
+
+ <<<<<<<
+92 >>>> 
+2-B. Did you use the basic recruitment process for professional occupations?
+
+
+Yes
+No
+
+ <<<<<<<
+93 >>>> 
+3. Date alien selected:
+ 
+ <<<<<<<
+94 >>>> 
+4. Name and date of national professional journal in which advertisement was placed:
+ 
+ <<<<<<<
+95 >>>> 
+5. Specify additional recruitment information in this space. Add an attachment if necessary.
+ 
+ <<<<<<<
+96 >>>> 
+6. Start date for the SWA job order
+04/22/2016 
+ <<<<<<<
+97 >>>> 
+7. End date for the SWA job order
+05/22/2016 
+ <<<<<<<
+98 >>>> 
+8. Is there a Sunday edition of the newspaper in the area ofintended employment?
+
+
+Yes
+No
+
+ <<<<<<<
+99 >>>> 
+9. Name of newspaper (of general circulation) in which the first advertisement was placed:
+The New York Times 
+ <<<<<<<
+100 >>>> 
+10. Date of first advertisement identified in question 9:
+04/24/2016 
+ <<<<<<<
+101 >>>> 
+11. Name of newspaper or professional journal (if applicable) in which second advertisement was placed:
+The New York Times 
+                
+
+   
+                    	Newspaper
+Journal
+
+ <<<<<<<
+102 >>>> 
+12. Date of second newspaper advertisement or date of publication of journal identified in question 11:  
+05/01/2016 
+                
+           	 <<<<<<<
+103 >>>> 
+13. Dates advertised at job fair
+
+From: -
+To: -
+
+ <<<<<<<
+104 >>>> 
+14. Dates of on-campus recruiting
+
+From: -
+To: -
+
+ <<<<<<<
+105 >>>> 
+15. Dates posted on employer web site
+
+From: 05/24/2016
+To: 06/08/2016
+
+ <<<<<<<
+106 >>>> 
+16. Dates advertised with trade or professional organization
+
+From: -
+To: -
+
+ <<<<<<<
+107 >>>> 
+17. Dates listed with job search web site
+
+From: 04/24/2016
+To: 05/23/2016
+
+ <<<<<<<
+108 >>>> 
+18. Dates listed with private employment firm
+
+From: -
+To: -
+
+ <<<<<<<
+109 >>>> 
+19. Dates advertised with employee referral program
+
+From: -
+To: -
+
+ <<<<<<<
+110 >>>> 
+20. Dates advertised with campus placement office
+
+From: -
+To: -
+
+ <<<<<<<
+111 >>>> 
+21. Dates advertised with local or ethnic newspaper
+
+From: 04/28/2016
+To: 04/29/2016
+
+ <<<<<<<
+112 >>>> 
+22. Dates advertised with radio or TV ads
+
+From: -
+To: -
+
+ <<<<<<<
+113 >>>> 
+23. Has the employer received payment of any kind for the submission of this application?
+
+
+Yes
+No
+
+ <<<<<<<
+114 >>>> 
+23-A. If Yes, describe details of the payment including the amount, date and purpose of the payment:
+ 
+ <<<<<<<
+115 >>>> 
+24. Has the bargaining representative for workers in the occupation in which the alien will be employed been provided with notice of this filing at least 30 days but not more than 180 days before the date the application is filed?
+
+
+Yes
+No
+N/A
+
+ <<<<<<<
+116 >>>> 
+25. If there is no bargaining representative, has a notice of this filing been posted for 10 business days in a conspicuous location at the place of employment, ending at least 30 days before but not more than 180 days before the date the application is filed?
+
+
+Yes
+No
+N/A
+
+ <<<<<<<
+117 >>>> 
+26. Has the employer had a layoff in the area of intended employment in the occupation involved in this application or in a related occupation within the six months immediately preceding the filing of this application?
+
+
+Yes
+No
+
+ <<<<<<<
+118 >>>> 
+26-A. If Yes, were the laid off U.S. workers notified and considered for the job opportunity for which certification is sought?
+
+
+Yes
+No
+N/A
+
+ <<<<<<<
+119 >>>> 
+1. Alien's last name
+
+ <<<<<<<
+120 >>>> 
+First Name
+
+ <<<<<<<
+121 >>>> 
+Full middle name
+
+ <<<<<<<
+122 >>>> 
+2. Current address 1
+
+ <<<<<<<
+123 >>>> 
+Address 2
+
+ <<<<<<<
+124 >>>> 
+3. City
+BURNSVILLE 
+ <<<<<<<
+125 >>>> 
+State/Province
+MN  
+				
+ <<<<<<<
+126 >>>> 
+Country
+UNITED STATES OF AMERICA 
+ <<<<<<<
+127 >>>> 
+Postal Code
+55337 
+ <<<<<<<
+128 >>>> 
+4. Phone number of current residence
+
+ <<<<<<<
+129 >>>> 
+5. Country of citizenship
+MALAYSIA 
+ <<<<<<<
+130 >>>> 
+6. Country of birth
+MALAYSIA 
+ <<<<<<<
+131 >>>> 
+7. Alien's date of birth
+
+ <<<<<<<
+132 >>>> 
+8. Class of admission
+H-1B 
+ <<<<<<<
+133 >>>> 
+9. Alien registration number (A#)
+
+ <<<<<<<
+134 >>>> 
+10. Alien admission number (I-94)
+
+ <<<<<<<
+135 >>>> 
+11. Education: highest level achieved relevant to the requested occupation:
+
+
+    
+None
+High School
+Associate's
+Bachelor's
+Master's
+Doctorate
+Other
+
+ <<<<<<<
+136 >>>> 
+11-A. If Other indicated in question 11, specify
+ 
+ <<<<<<<
+137 >>>> 
+12. Specify major field(s) of study
+INDUSTRIAL-ORGANIZATIONAL PSYCHOLOGY 
+ <<<<<<<
+138 >>>> 
+13. Year relevant education completed
+2010 
+ <<<<<<<
+139 >>>> 
+14. Institution where relevant education specified in question 11 was received
+ST. CLOUD STATE UNIVERSITY 
+ <<<<<<<
+140 >>>> 
+15. Address 1 of conferring institution
+720 4TH AVENUE SOUTH 
+ <<<<<<<
+141 >>>> 
+  Address 2
+ 
+ <<<<<<<
+142 >>>> 
+16. City
+ST. CLOUD 
+ <<<<<<<
+143 >>>> 
+  State/Province
+MN  
+                
+ <<<<<<<
+144 >>>> 
+  Country
+UNITED STATES OF AMERICA 
+ <<<<<<<
+145 >>>> 
+  Postal Code
+56301 
+ <<<<<<<
+146 >>>> 
+17. Did the alien complete the training required for the requested job opportunity, as indicated in question H.5?
+
+
+Yes
+No
+N/A
+
+ <<<<<<<
+147 >>>> 
+18. Does the alien have the experience as required for the requested job opportunity indicated in question H.6?
+
+
+Yes
+No
+N/A
+
+ <<<<<<<
+148 >>>> 
+19. Does the alien possess the alternate combination of education and experience as indicated in question H.8?
+
+
+Yes
+No
+N/A
+
+ <<<<<<<
+149 >>>> 
+20. Does the alien have the experience in an alternate occupation specified in question H.10?
+
+
+Yes
+No
+N/A
+
+ <<<<<<<
+150 >>>> 
+21. Did the alien gain any of the qualifying experience with the employer in a position substantially comparable to the job opportunity requested?
+
+
+Yes
+No
+N/A
+
+ <<<<<<<
+151 >>>> 
+22. Did the employer pay for any of the alien's education or training necessary to satisfy any of the employer's job requirements for this position?
+
+
+Yes
+No
+
+ <<<<<<<
+152 >>>> 
+23. Is the alien currently employed by the petitioning employer?
+
+
+Yes
+No
+
+ <<<<<<<
+153 >>>> 
+1. Employer Name
+
+ <<<<<<<
+154 >>>> 
+2. Address 1
+
+      Address 2
+
+ <<<<<<<
+155 >>>> 
+3. City State/Province Country Postal Code
+
+ <<<<<<<
+156 >>>> 
+4. Type of Business
+
+ <<<<<<<
+157 >>>> 
+5. Job Title
+
+ <<<<<<<
+158 >>>> 
+6. Start Date
+
+ <<<<<<<
+159 >>>> 
+7. End Date
+
+ <<<<<<<
+160 >>>> 
+8. Number of hours worked per week
+
+ <<<<<<<
+161 >>>> 
+9. Job Details (duties performed, use of tools, machines, equipment, skills, qualifications, certifications, licenses, etc. Include the phone number of the employer and the name of the alien's supervisor.) 
+
+ <<<<<<<
+162 >>>> 
+1. Alien's last name
+
+ <<<<<<<
+163 >>>> 
+First name 
+
+ <<<<<<<
+164 >>>> 
+Full middle name
+
+ <<<<<<<
+165 >>>> 
+2. Signature Date signed
+
+ <<<<<<<
+166 >>>> 
+1. Was the application completed by the employer? If No, you must complete this section.
+
+
+Yes
+No
+
+ <<<<<<<
+167 >>>> 
+2. Preparer's last name
+Peloquin 
+ <<<<<<<
+168 >>>> 
+First Name
+Tina 
+ <<<<<<<
+169 >>>> 
+Middle initial
+R 
+ <<<<<<<
+170 >>>> 
+3. Title
+Partner 
+ <<<<<<<
+171 >>>> 
+4. E-mail address
+tpeloquin@fragomen.com 
+ <<<<<<<
+172 >>>> 
+5. Signature
+
+
+Yes
+No
+
+ <<<<<<<
+173 >>>> 
+ Date signed
+ 
+ <<<<<<<
+174 >>>> 
+1. Last name
+Lovato 
+ <<<<<<<
+175 >>>> 
+First name
+Chris 
+ <<<<<<<
+176 >>>> 
+Middle initial
+ 
+ <<<<<<<
+177 >>>> 
+2. Title
+Executive Consulting Leader 
+ <<<<<<<
+178 >>>> 
+3. Signature
+
+
+Yes
+No
+
+ <<<<<<<
+179 >>>> 
+ Date signed
+ 
+ <<<<<<<
