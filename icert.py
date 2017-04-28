@@ -57,14 +57,83 @@ from bs4 import BeautifulSoup
 soup = BeautifulSoup(page)
 soups=str(soup)
 print(soups)
-count=0
+count=0;cnt=0;
 data = soups.split(",[")# there are some job titles with []. Need to change separator
 conn = pymysql.connect(host='127.0.0.1', unix_socket='/tmp/mysql.sock', user='root', passwd=None, db='misc',use_unicode=True, charset="utf8")
 sql="""INSERT INTO icertportal(id,caseNumber,jobPostingDate,caseType,status,employer,startDate,endDate,jobTitle,state,url) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"""
 cur = conn.cursor()
 company="";startDate="";endDate="";jobTitle="";state=""
 for d in data:
-    if(d.find("A-")!=-1):
+    cnt+=1;#Checks 1st row
+    if(cnt==1):
+        str1 = d.split("[[")
+        str = str1[1].split(",")
+        company = removequote(str[5])
+        detailurl=detailurl+removequote(str[0])
+        jobTitle=removequote(str[8])
+
+        if(removequote(str[6]).find("0")!=-1):
+            print("First ROW INSIDE 1st IF")
+            print(d)
+            print("++++++++++++",removequote(str[0]),"|",removequote(str[1]),"|",removequote(str[2]),"|",removequote(str[3]),"|",removequote(str[4]),"|",removequote(str[5]),"|",removequote(str[6]),"|",removequote(str[7]),"|",removequote(str[8]),"|",removequote(str[9]))
+            #print("------------",removequote(str[0]),"-",removequote(str[1]),"-",removequote(str[2]),"-",removequote(str[3]),"-",removequote(str[4]),"-",company,"-",startDate,"-",endDate,"-",jobTitle,"-",state,"--",detailurl)
+
+            startDate=removequote(str[6])
+            endDate=removequote(str[7])
+            if(removebracket(str[8]).endswith('"')):
+                jobTitle=jobTitle
+                state=removequote(str[9])
+                print("First ROW INSIDE jobtitle 1st match")
+            else:
+                if(removebracket(str[9]).endswith('"')):
+                    print("First ROW INSIDE jobtitle 1st match 2nd")
+                    jobTitle = jobTitle+removequote(str[9])
+                    state=removequote(str[10])
+        else:
+            company=company+" "+removequote(str[6])
+            if(removequote(str[7]).find("0")!=-1):
+                print("First ROW INSIDE 2nd else IF")
+                startDate=removequote(str[7])
+                endDate=removequote(str[8])
+                #jobTitle=removequote(str[9])
+                if(removebracket(str[9]).endswith('"')):
+                    jobTitle=removequote(str[9])
+                    state=removequote(str[10])
+                    print("First ROW INSIDE jobtitle 2nd match")
+                else:
+                    if(removebracket(str[10]).endswith('"')):
+                        jobTitle = jobTitle+removequote(str[10])
+                        state=removequote(str[11])
+                        print("First ROW INSIDE jobtitle 2nd match 2nd")
+            else:
+
+                company=company+removequote(str[7])
+                if(removequote(str[8]).find("0")!=-1):
+
+                    startDate=removequote(str[8])
+                    endDate=removequote(str[9])
+                    #jobTitle=removequote(str[10])
+                    if(removebracket(str[10]).endswith('"')):
+                        jobTitle=removequote(str[10])
+                        state=removequote(str[11])
+                        print("First ROW INSIDE jobtitle 3rd match")
+                    else:
+                        if(removebracket(str[11]).endswith('"')):
+                            jobTitle = jobTitle+removequote(str[11])
+                            state=removequote(str[12])
+                            print("First ROW INSIDE jobtitle 3rd match 2nd")
+                    print("------",str[10],"---",jobTitle)
+                    state=removequote(str[11])
+                    print("First ROW INSIDE 3rd else IF JOBTITLE:",jobTitle)
+        print("FIRST ROW:",removequote(str[0]),"-",removequote(str[1]),"-",removequote(str[2]),"-",removequote(str[3]),"-",removequote(str[4]),"-",company,"-",startDate,"-",endDate,"-",jobTitle,"-",state,"--",detailurl)
+        try:
+            cur.execute(sql,(removequote(str[0]),removequote(str[1]),mmddyyyy(removequote(str[2])),removequote(str[3]),removequote(str[4]),removequote(company),mmddyyyy(startDate),mmddyyyy(endDate),jobTitle,state,detailurl))
+            detailurl="https://lcr-pjr.doleta.gov/index.cfm?event=ehLCJRExternal.dspCert&doc_id=3&visa_class_id=6&id="
+        except:
+            print("DB ERROR!!!!!!!!!!!!!!!!!!")
+            detailurl="https://lcr-pjr.doleta.gov/index.cfm?event=ehLCJRExternal.dspCert&doc_id=3&visa_class_id=6&id="
+            print(traceback.format_exc())
+    if(d.find("A-")!=-1 and cnt>1):
         count+=1
         #print(d,count)
         str = d.split(",")
