@@ -19,11 +19,13 @@ attorneyLastName='';attorneyFirstName='';attorneyAdd1='';attorneyAdd2='';attorne
 #print(len(board),len(board[0]))
 OccupationTitle='';pwg=0;
 print ('Number of arguments:', len(sys.argv), 'arguments.')
+print(sys.argv[0]," ")
 
 try:
-	id=int(sys.argv[1])
+	id=int(sys.argv[1].strip())
 except:
 	id=1234
+print("ID:",id)
 url1="https://lcr-pjr.doleta.gov/index.cfm?event=ehLCJRExternal.dspCert&doc_id=3&visa_class_id=6&id="
 
 try:
@@ -50,7 +52,7 @@ for row in all_h5_p:
 	#print(str)
 #print(values)
 i=0;j=0;k=0
-valueslist = values.split("-----")	
+valueslist = values.split("-----")
 #print(len(valueslist))
 #print(valueslist)
 
@@ -142,7 +144,7 @@ except:
 print('-----PWG----',pwgtracking,OccupationTitle,skillLevel,pwgvalue,pwgDeterminationDate,pwgExpirationDate,owFromValue,owToValue)
 
 workAdd1=valueslist[113]
-workAdd2=valueslist[115]	
+workAdd2=valueslist[115]
 workCity=valueslist[117]
 workState=valueslist[119]
 workZip=valueslist[121]
@@ -175,22 +177,22 @@ except:
 newspaper=valueslist[199]
 print('%%%%%%%%%%%%%%%%%%',valueslist[201].strip(),valueslist[206].strip())
 try:
-	advDateFirst=datetime.datetime.strptime(valueslist[201].strip(), '%m/%d/%Y') 
+	advDateFirst=datetime.datetime.strptime(valueslist[201].strip(), '%m/%d/%Y')
 except:
 	advDateFirst='1900-01-01 00:00:00'
 try:
-	advDateSecond=datetime.datetime.strptime(valueslist[206].strip(), '%m/%d/%Y')  
+	advDateSecond=datetime.datetime.strptime(valueslist[206].strip(), '%m/%d/%Y')
 except:
 	advDateSecond='1900-01-01 00:00:00'
 ewdtfrom=valueslist[212]
 empWebSitePostDate=ewdtfrom.split()
 print('DEBUG::::',empWebSitePostDate[1].strip(),empWebSitePostDate[3].strip())
 try:
-	empWebSitePostDateFrom=datetime.datetime.strptime(empWebSitePostDate[1].strip(), '%m/%d/%Y') 
+	empWebSitePostDateFrom=datetime.datetime.strptime(empWebSitePostDate[1].strip(), '%m/%d/%Y')
 except:
 	empWebSitePostDateFrom='1900-01-01 00:00:00'
 try:
-	empWebSitePostDateTo=datetime.datetime.strptime(empWebSitePostDate[3].strip(), '%m/%d/%Y') 
+	empWebSitePostDateTo=datetime.datetime.strptime(empWebSitePostDate[3].strip(), '%m/%d/%Y')
 except:
 	empWebSitePostDateTo='1900-01-01 00:00:00'
 jobsearch=valueslist[216]
@@ -200,18 +202,18 @@ try:
 except:
 	jobSearchWebSiteFrom='1900-01-01 00:00:00'
 try:
-	jobSearchWebSiteTo=datetime.datetime.strptime(jobsearchwebsite[3].strip(), '%m/%d/%Y') 
+	jobSearchWebSiteTo=datetime.datetime.strptime(jobsearchwebsite[3].strip(), '%m/%d/%Y')
 except:
 	jobSearchWebSiteTo='1900-01-01 00:00:00'
 
 localnews=valueslist[224]
 localnewspaperdate=localnews.split()
 try:
-	localNewsPaperDateFrom=datetime.datetime.strptime(localnewspaperdate[1].strip(), '%m/%d/%Y') 
+	localNewsPaperDateFrom=datetime.datetime.strptime(localnewspaperdate[1].strip(), '%m/%d/%Y')
 except:
 	localNewsPaperDateFrom='1900-01-01 00:00:00'
 try:
-	localNewsPaperDateTo=datetime.datetime.strptime(localnewspaperdate[3].strip(), '%m/%d/%Y') 
+	localNewsPaperDateTo=datetime.datetime.strptime(localnewspaperdate[3].strip(), '%m/%d/%Y')
 except:
 	localNewsPaperDateTo='1900-01-01 00:00:00'
 print('---------SWA----------',swaStartDt,swaEndDt,newspaper,jobSearchWebSiteFrom,jobSearchWebSiteTo,advDateFirst,advDateSecond,empWebSitePostDateFrom,empWebSitePostDateTo,localNewsPaperDateFrom,localNewsPaperDateTo)
@@ -253,36 +255,37 @@ print('------ALIEN2--------',alieneducompletedyr,aliencollege,alienuniversityadd
 print(type(numEmployees))
 print(id,company,empAdd1,empAdd2,empcity,empState,empCountry,empZip,employerph,numEmployees,empYr,empLastName,empFirstName,empPhone,empEmail,attorneyLastName,attorneyFirstName,attorneyPhone,attorneyAdd1,attorneyAdd2,attorneyCity,attorneyState,attorneyCountry,attorneyZip,attorneyEmail,pwgtracking,OccupationTitle,skillLevel,pwgvalue,pwgDeterminationDate,pwgExpirationDate,owFromValue,owToValue,workAdd1,workAdd2,workCity,workState,workZip,jobTitle,majorField,numyrexp,jobDuties,specificSkill,swaStartDt,swaEndDt,newspaper,advDateFirst,advDateSecond,empWebSitePostDateFrom,empWebSitePostDateTo,jobSearchWebSiteFrom,jobSearchWebSiteTo,localNewsPaperDateFrom,localNewsPaperDateTo,alienCity,alienState,alienCountry,alienZip,aliencitizenshipcountry,aliencountryofbirth,alienclassofadmission,alienmajor,alieneducompletedyr,aliencollege,alienuniversityadd1,alienuniversityadd2,alienuniversitycity,alienuniversityState,alienuniversitycountry,alienuniversityzip)
 print('##############ARGV[1]:',sys.argv[1])
-conn = pymysql.connect(host='127.0.0.1', unix_socket='/tmp/mysql.sock', user='root', passwd=None, db='misc',use_unicode=True, charset="utf8")
-conn1 = pymysql.connect(host='127.0.0.1', unix_socket='/tmp/mysql.sock', user='root', passwd=None, db='misc',use_unicode=True, charset="utf8")
-#conn.set_character_set('utf8')
-sql="""INSERT INTO icertdata(id,employer,empadd1,empadd2,empcity,empstate,empcountry,empzipcode,employerphone,empnumemployees,empyr,emplastname,empfirstname,empphone,empemail,attorneylastname,attorneyfirstname,attorneyphone,attorneyadd1,attorneyadd2,attorneycity,attorneystate,attorneycountry,attorneyzip,attorneyemail,PWnum,occupation,skilllevel,prevailingwage,determinationdate,expirationdate,OfferedWageFrom,offeredwageto,workadd1,workadd2,workcity,workstate,workzip,jobtitle,major,numyrexperience,jobduties,specificskill,SWAstartdate,SWAenddate,newspaper,advdatefirst,advdatesecond,empwebsitepostdatefrom,empwebsitepostdateto,jobsearchwebsitefrom,jobsearchwebsiteto,localnewspaperdatefrom,localnewspaperdateto,aliencity,alienstate,aliencountry,alienzip,aliencitizenshipcountry,aliencountryofbirth,alienclassofadmission,alienmajor,alieneducompletedyr,aliencollege,alienuniversityadd1,alienuniversityadd2,alienuniversitycity,alienuniversitystate,alienuniversitycountry,alienuniversityzip) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"""
+print("URL:",url,":---------------------------------COMPANY:",company,"COMPANY LENGTH",len(company))
+if(len(company)>1):
+	conn = pymysql.connect(host='127.0.0.1', unix_socket='/tmp/mysql.sock', user='root', passwd=None, db='misc',use_unicode=True, charset="utf8")
+	conn1 = pymysql.connect(host='127.0.0.1', unix_socket='/tmp/mysql.sock', user='root', passwd=None, db='misc',use_unicode=True, charset="utf8")
+	#conn.set_character_set('utf8')
+	sql="""INSERT INTO icertdata(id,employer,empadd1,empadd2,empcity,empstate,empcountry,empzipcode,employerphone,empnumemployees,empyr,emplastname,empfirstname,empphone,empemail,attorneylastname,attorneyfirstname,attorneyphone,attorneyadd1,attorneyadd2,attorneycity,attorneystate,attorneycountry,attorneyzip,attorneyemail,PWnum,occupation,skilllevel,prevailingwage,determinationdate,expirationdate,OfferedWageFrom,offeredwageto,workadd1,workadd2,workcity,workstate,workzip,jobtitle,major,numyrexperience,jobduties,specificskill,SWAstartdate,SWAenddate,newspaper,advdatefirst,advdatesecond,empwebsitepostdatefrom,empwebsitepostdateto,jobsearchwebsitefrom,jobsearchwebsiteto,localnewspaperdatefrom,localnewspaperdateto,aliencity,alienstate,aliencountry,alienzip,aliencitizenshipcountry,aliencountryofbirth,alienclassofadmission,alienmajor,alieneducompletedyr,aliencollege,alienuniversityadd1,alienuniversityadd2,alienuniversitycity,alienuniversitystate,alienuniversitycountry,alienuniversityzip) VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"""
 #sql="""INSERT INTO icertdata(empnumemployees,empyr,numyrexperience,alieneducompletedyr) VALUES(%d,%d,%d,%d)"""
 #sql="""INSERT INTO icertdata(empnumemployees) VALUES(%s)"""
-cur = conn.cursor()
-cur1=conn1.cursor()
-#cur.execute('SET NAMES utf8;') 
+	cur = conn.cursor()
+	cur1=conn1.cursor()
+#cur.execute('SET NAMES utf8;')
 #cur.execute('SET CHARACTER SET utf8;')
 #cur.execute('SET character_set_connection=utf8;')
-page.close()
-try:
-	cur.execute(sql,(id,company,empAdd1,empAdd2,empcity,empState,empCountry,empZip,employerph,numEmployees,empYr,empLastName,empFirstName,empPhone,empEmail,attorneyLastName,attorneyFirstName,attorneyPhone,attorneyAdd1,attorneyAdd2,attorneyCity,attorneyState,attorneyCountry,attorneyZip,attorneyEmail,pwgtracking,OccupationTitle,skillLevel,pwgvalue,pwgDeterminationDate,pwgExpirationDate,owFromValue,owToValue,workAdd1,workAdd2,workCity,workState,workZip,jobTitle,majorField,numyrexp,jobDuties,specificSkill,swaStartDt,swaEndDt,newspaper,advDateFirst,advDateSecond,empWebSitePostDateFrom,empWebSitePostDateTo,jobSearchWebSiteFrom,jobSearchWebSiteTo,localNewsPaperDateFrom,localNewsPaperDateTo,alienCity,alienState,alienCountry,alienZip,aliencitizenshipcountry,aliencountryofbirth,alienclassofadmission,alienmajor,alieneducompletedyr,aliencollege,alienuniversityadd1,alienuniversityadd2,alienuniversitycity,alienuniversityState,alienuniversitycountry,alienuniversityzip))
-except:
-	print("DB ERROR!!!!!!!!!!!!!!!!!!")
-	print('ERROR: %sn' % str(err))
+	page.close()
+	try:
+		cur.execute(sql,(id,company,empAdd1,empAdd2,empcity,empState,empCountry,empZip,employerph,numEmployees,empYr,empLastName,empFirstName,empPhone,empEmail,attorneyLastName,attorneyFirstName,attorneyPhone,attorneyAdd1,attorneyAdd2,attorneyCity,attorneyState,attorneyCountry,attorneyZip,attorneyEmail,pwgtracking,OccupationTitle,skillLevel,pwgvalue,pwgDeterminationDate,pwgExpirationDate,owFromValue,owToValue,workAdd1,workAdd2,workCity,workState,workZip,jobTitle,majorField,numyrexp,jobDuties,specificSkill,swaStartDt,swaEndDt,newspaper,advDateFirst,advDateSecond,empWebSitePostDateFrom,empWebSitePostDateTo,jobSearchWebSiteFrom,jobSearchWebSiteTo,localNewsPaperDateFrom,localNewsPaperDateTo,alienCity,alienState,alienCountry,alienZip,aliencitizenshipcountry,aliencountryofbirth,alienclassofadmission,alienmajor,alieneducompletedyr,aliencollege,alienuniversityadd1,alienuniversityadd2,alienuniversitycity,alienuniversityState,alienuniversitycountry,alienuniversityzip))
+	except:
+		print("DB ERROR!!!!!!!!!!!!!!!!!!")
+		print('ERROR: %sn' % str(err))
 	#conn1 = pymysql.connect(host='127.0.0.1', unix_socket='/tmp/mysql.sock', user='root', passwd=None, db='misc',use_unicode=True, charset="utf8")
 	#errorsql="""INSERT INTO ERRORDATA(ID) VALUES(%s)"""
-	
-	cur1.execute(errorsql,(id))
-	conn1.commit()
-	cur1.close()
-	conn1.close()
+
+		cur1.execute(errorsql,(id))
+		conn1.commit()
+		cur1.close()
+		conn1.close()
 #cur.execute(sql,(numEmployees,empYr,numyrexp,alieneducompletedyr))
 
-conn.commit()
-cur.close()
-conn.close()
+	conn.commit()
+	cur.close()
+	conn.close()
 
-        																												 
-#pwsource varchar(30),  , educationmin varchar(100),,trainingrequired varchar(10),alteducation varchar(100), 
-																																																																		
+
+#pwsource varchar(30),  , educationmin varchar(100),,trainingrequired varchar(10),alteducation varchar(100),
